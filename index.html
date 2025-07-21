@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhoury Shauryam - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="work-mode">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Akhoury Shauryam</h1>
+            </div>
+            <div class="mode-toggle">
+                <button id="workModeBtn" class="mode-btn active">Work</button>
+                <button id="playModeBtn" class="mode-btn">Play</button>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Satan-Claws" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akhoury-shauryam-a87195221/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <!-- Work Mode Navigation -->
+            <div id="workNav" class="nav-menu active">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="experience.html" class="nav-link">Experience</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="problems.html" class="nav-link">Problem Archive</a>
+                <a href="presentations.html" class="nav-link">Presentations</a>
+            </div>
+            <!-- Play Mode Navigation -->
+            <div id="playNav" class="nav-menu">
+                <a href="#misc1" class="nav-link">Misc1</a>
+                <a href="#misc2" class="nav-link">Misc2</a>
+                <a href="#misc3" class="nav-link">Misc3</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Work Mode Content -->
+        <div id="workContent" class="content-section active">
+            <!-- About Section -->
+            <section id="about" class="section">
+            <div class="container">
+                <h2>About</h2>
+                <div class="about-content">
+                    <div class="profile-image">
+                        <img src="assets/images/profile.jpg" alt="Profile" onerror="this.style.display='none'">
+                    </div>
+                    <div class="about-text">
+                        <p>I am an Operations Research Scientist at Lyric, where I work on large-scale optimization models for solving real-world decision-making problems in logistics, planning, and resource allocation.</p>
+                        <p>I hold a Master’s degree in Computer Science from Chennai Mathematical Institute, where I was advised by Prof. M.K. Srivas and Prof. M. Praveen. My research interests lie broadly in Optimization, Statistics, Formal Methods, Machine Learning, and the intersections between them.</p>
+                        <p>In Summer 2025, I worked with Prof. Toshiaki Aoki at JAIST on the formal safety verification of autonomous vehicles.</p>
+                        <p>In Summer 2024, I was a Research Intern at LiVe Lab, a joint lab between Masaryk University and Technical University of Munich under Prof. Jan Křetínský. We studied LTL synthesis to create winning policies using ML heuristics.</p>
+                        <p>Previously, I worked as a Quantitative Research Intern at True Beacon, an asset management firm based in Bengaluru, where I worked on factor model research and mutual fund selection algorithms in Indian markets.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 2024 -</div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="assets/images/lyric.svg" alt="Lyric" onerror="this.style.display='none'">
+                            </div>
+                            <h3>Lyric</h3>
+                            <h4>Operations Research Scientist</h4>
+                            <ul>
+                                <li>Joined Lyric as an OR Scientist.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mar 2024 - Nov 2024</div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="assets/images/TrueBeacon.png" alt="True Beacon" onerror="this.style.display='none'">
+                            </div>
+                            <h3>True Beacon</h3>
+                            <h4>Quantitative Research Intern</h4>
+                            <ul>
+                                <li>Researched Factor Model Research for Indian Markets.</li>
+                                <li>Optimized Portfolio Management through conducting in-depth analysis to validate and refine existing models using Machine Learning and Statistics.</li>
+                                <li>Worked on Algorithm to Pick Mutual Funds and Recreate them using low-cost indices.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Feb 2023 - Jun 2023</div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="assets/images/Metamation.jpeg" alt="Trumpf Metamation" onerror="this.style.display='none'">
+                            </div>
+                            <h3>Trumpf Metamation</h3>
+                            <h4>Project Intern</h4>
+                            <ul>
+                                <li>Fine-tuned robot precision using Image Processing for edge detection of metal sheets using MATLAB and OpenCV2.</li>
+                                <li>Wrote code for Raspberry Pi to guide the robot to pick the sheets from the correct position and orientation.</li>
+                                <li>Wrote code to find qr-like marks on a metal sheet to find height and its bend angle.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Dec 2022 - Feb 2023</div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="assets/images/AlgoLabs.jpeg" alt="AlgoLabs" onerror="this.style.display='none'">
+                            </div>
+                            <h3>AlgoLabs</h3>
+                            <h4>Machine Learning Intern</h4>
+                            <ul>
+                                <li>Implemented OpenAI's Whisper model to make a Video ASR to transcribe Video captioning.</li>
+                                <li>Created a model for Invoice Image to Data with labels using PyTesseract and LayoutLMV3.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Aug 2022 - Nov 2023</div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="assets/images/XKDR.svg" alt="XKDR Forum" onerror="this.style.display='none'">
+                            </div>
+                            <h3>XKDR Forum</h3>
+                            <h4>Julia Dev Intern</h4>
+                            <ul>
+                                <li>Contributed to the package NISTTests.jl which calculates how precise a Linear Regression Model is.</li>
+                                <li>Made functions in R and Julia to calculate the given model's output and compare them with certified data.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Jun 2022 - Aug 2022</div>
+                        <div class="timeline-content">
+                            <div class="company-logo">
+                                <img src="assets/images/nordic.png" alt="Galaxy Project" onerror="this.style.display='none'">
+                            </div>
+                            <h3>Galaxy Project: Nordic Earth System</h3>
+                            <h4>Summer Intern</h4>
+                            <ul>
+                                <li>Created a visualization tool using Python, XML, Planemo.</li>
+                                <li>Analyzed monthly data from satellites, such as MEERA GLDAS to make Time series plots, CSV files, and create animated cartographic projections.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research</h2>
+                <div class="research-grid">
+                    <div class="research-item">
+                        <div class="research-logo">
+                            <img src="assets/images/aokilab.png" alt="Aoki Laboratory" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Aoki Laboratory</h3>
+                        <h4>Research Intern (Feb 2025 -)</h4>
+                        <p>Working under Prof. Aoki Toshiaki on the Topic "Formal Methods and Autonomous Driving" to make Autoware's Planning more safe and identify the cause of a crash.</p>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-logo">
+                            <img src="assets/images/SupraOracles.svg" alt="Supra Oracles" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Supra Oracles</h3>
+                        <h4>Thesis Project (Aug 2024 - Apr 2025)</h4>
+                        <p>Working under Prof. M.K. Srivas and Prof. M. Praveen in collaboration with Supra Oracles to perform verification on Blockchain Protocols.</p>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-logo">
+                            <img src="assets/images/LiVe.png" alt="LiVe Lab" onerror="this.style.display='none'">
+                        </div>
+                        <h3>LiVe Lab</h3>
+                        <h4>Research Intern (May 2024 - July 2024)</h4>
+                        <p>Worked under Prof. Jan Kretinsky at LiVe Lab, a joint Lab between Masaryk University Brno, Czech Republic, and the Technical University of Munich, Germany. We studied LTL synthesis to create winning policies using ML heuristics.</p>
+                    </div>
+
+                    <div class="research-item">
+                        <div class="research-logo">
+                            <img src="assets/images/cmi.png" alt="CMI" onerror="this.style.display='none'">
+                        </div>
+                        <h3>Chennai Mathematical Institute</h3>
+                        <h4>Research Intern (Dec 2022 - May 2025)</h4>
+                        <p>Working under Prof M.K.Srivas in the area of Machine Learning ∩ Formal Methods. Creating a new tool for safety verification of ReLU activated DNNs. Studying methods to guarantee safety in Reinforcement Learning methods such as Shielding.</p>
+                        <h5>Teacher's Assistant for:</h5>
+                        <ul>
+                            <li>Topics in Formal Methods and Machine Learning (Aug 2023 - Dec 2023, Jan 2025 - Apr 2025, under Prof M.K. Srivas)</li>
+                            <li>Software Verification and Analysis (Aug 2024 - Dec 2024 under Prof M.K. Srivas)</li>
+                            <li>Natural Language Processing (Aug 2024 - Dec 2024 under Prof R. Ramachandran)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2>Achievements</h2>
+                <div class="achievements">
+                    <h3>Competition Achievements</h3>
+                    <ul>
+                        <li>JEE Advanced (2020) Mathematics 130/132</li>
+                        <li>ICPC Regionals Rank 21 Chennai Site (2025)</li>
+                        <li>ICPC Regionals Rank 154 Amritapuri Site (2024)</li>
+                        <li>ICPC Regionals Rank 51 Chennai Site (2024)</li>
+                        <li>Simon Marais Mathematics Competition [SMMC] (2023) - 4th All India Rank, 38th Global East</li>
+                        <li>Specialist on Codeforces</li>
+                        <li>Madhava Mathematics Competition [MMC] (2023) - 6th All India Rank</li>
+                        <li>Regional Mathematical Olympiad [RMO] (2018, 2019)</li>
+                        <li>Awarded Shriram Scholarship with full tuition fee waiver and stipend (2020, 2023)</li>
+                        <li>KVPY-SA (2020) Stage-1</li>
+                        <li>AMC12A and 12B Honor Roll of Distinction and 3rd Rank in India (2020)</li>
+                        <li>SAT (2019) Mathematics 800/800</li>
+                    </ul>
+                </div>
+                <div class="problem-archive-link">
+                    <h3>Original Problems</h3>
+                    <p>I've created several original mathematical problems. You can find them all in the <a href="problems.html" class="archive-link">Problem Archive</a>.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <!-- Play Mode Content -->
+        <div id="playContent" class="content-section">
+            <!-- Misc1 Section -->
+            <section id="misc1" class="section">
+                <div class="container">
+                    <h2>Misc1</h2>
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h3>Coming Soon</h3>
+                        <p>This section will feature interesting content related to Misc1. Stay tuned for updates!</p>
+                        <div class="placeholder-grid">
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 1</h4>
+                                <p>Description of the first item...</p>
+                            </div>
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 2</h4>
+                                <p>Description of the second item...</p>
+                            </div>
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 3</h4>
+                                <p>Description of the third item...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Misc2 Section -->
+            <section id="misc2" class="section">
+                <div class="container">
+                    <h2>Misc2</h2>
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Coming Soon</h3>
+                        <p>This section will feature interesting content related to Misc2. Stay tuned for updates!</p>
+                        <div class="placeholder-grid">
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 1</h4>
+                                <p>Description of the first item...</p>
+                            </div>
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 2</h4>
+                                <p>Description of the second item...</p>
+                            </div>
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 3</h4>
+                                <p>Description of the third item...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Misc3 Section -->
+            <section id="misc3" class="section">
+                <div class="container">
+                    <h2>Misc3</h2>
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Coming Soon</h3>
+                        <p>This section will feature interesting content related to Misc3. Stay tuned for updates!</p>
+                        <div class="placeholder-grid">
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 1</h4>
+                                <p>Description of the first item...</p>
+                            </div>
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 2</h4>
+                                <p>Description of the second item...</p>
+                            </div>
+                            <div class="placeholder-item">
+                                <div class="placeholder-image"></div>
+                                <h4>Item 3</h4>
+                                <p>Description of the third item...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
