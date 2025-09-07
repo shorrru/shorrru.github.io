@@ -899,6 +899,7 @@ body.play-mode {
     max-width: 500px;
     margin-left: 0;
     margin-right: auto;
+    width: 100%;
 }
 
 .art-item {
@@ -907,6 +908,8 @@ body.play-mode {
     border-radius: 12px;
     overflow: hidden;
     transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .art-item:hover {
