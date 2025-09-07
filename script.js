@@ -18,12 +18,20 @@ document.addEventListener('DOMContentLoaded', function() {
         playModeBtn.classList.remove('active');
         
         // Update navigation
-        workNav.classList.add('active');
-        playNav.classList.remove('active');
+        if (workNav) {
+            workNav.classList.add('active');
+        }
+        if (playNav) {
+            playNav.classList.remove('active');
+        }
         
         // Update content
-        workContent.classList.add('active');
-        playContent.classList.remove('active');
+        if (workContent) {
+            workContent.classList.add('active');
+        }
+        if (playContent) {
+            playContent.classList.remove('active');
+        }
         
         // Update body class for styling
         body.classList.remove('play-mode');
@@ -32,8 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update toggle class
         document.querySelector('.mode-toggle').classList.remove('play-mode');
         
-        // Update URL without page reload
-        history.pushState({mode: 'work'}, '', '#work');
+        // Update URL without page reload (only on main page)
+        if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname.endsWith('/')) {
+            history.pushState({mode: 'work'}, '', '#work');
+        }
     });
 
     // Play mode button click
@@ -43,12 +53,20 @@ document.addEventListener('DOMContentLoaded', function() {
         workModeBtn.classList.remove('active');
         
         // Update navigation
-        playNav.classList.add('active');
-        workNav.classList.remove('active');
+        if (playNav) {
+            playNav.classList.add('active');
+        }
+        if (workNav) {
+            workNav.classList.remove('active');
+        }
         
         // Update content
-        playContent.classList.add('active');
-        workContent.classList.remove('active');
+        if (playContent) {
+            playContent.classList.add('active');
+        }
+        if (workContent) {
+            workContent.classList.remove('active');
+        }
         
         // Update body class for styling
         body.classList.remove('work-mode');
@@ -57,8 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update toggle class
         document.querySelector('.mode-toggle').classList.add('play-mode');
         
-        // Update URL without page reload
-        history.pushState({mode: 'play'}, '', '#play');
+            // Update URL without page reload (only on main page)
+            if (window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname.endsWith('/')) {
+                history.pushState({mode: 'play'}, '', '#play');
+            }
     });
 
     // Handle browser back/forward buttons
@@ -138,12 +158,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add smooth scrolling for anchor links within the same page
+    // Add smooth scrolling for anchor links within the same page (only for hash links)
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            if (href !== '#') {
+            // Only handle hash links, not regular page links
+            if (href !== '#' && href.startsWith('#')) {
                 const targetElement = document.querySelector(href);
                 if (targetElement) {
                     e.preventDefault();

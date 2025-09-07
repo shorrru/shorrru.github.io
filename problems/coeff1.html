@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence of Sequences - Problem Archive</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- MathJax Configuration -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="work-mode">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Akhoury Shauryam</h1>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Satan-Claws" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akhoury-shauryam-a87195221/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu active">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../experience.html" class="nav-link">Experience</a>
+                <a href="../research.html" class="nav-link">Research</a>
+                <a href="../problems.html" class="nav-link active">Problem Archive</a>
+                <a href="../presentations.html" class="nav-link">Presentations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="problem-header">
+                    <h1>Sequence of Sequences</h1>
+                    <div class="back-link">
+                        <a href="../problems.html"><i class="fas fa-arrow-left"></i> Back to Problem Archive</a>
+                    </div>
+                </div>
+                
+                <div class="problem-content">
+                    <p>We form a number triangle by first placing the positive integers along a down-and-right diagonal of an infinite square grid. Then, all other spaces in the triangle are filled by summing the numbers directly up and to the right of that space.</p>
+                    
+                    <p>The sequence $1, 3, 8, 20, 48, 112, 256, 576, \ldots$ occurs in the leftmost column of this triangle.</p>
+                    
+                    <p>If $S(x) = x + 3x^2 + 8x^3 + 20x^4 + 48x^5 + 112x^6 + 256x^7 + 576x^8 + \ldots$, what is $S(\frac{1}{3})$?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

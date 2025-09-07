@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-Cycle - Problem Archive</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- MathJax Configuration -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="work-mode">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Akhoury Shauryam</h1>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Satan-Claws" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akhoury-shauryam-a87195221/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu active">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../experience.html" class="nav-link">Experience</a>
+                <a href="../research.html" class="nav-link">Research</a>
+                <a href="../problems.html" class="nav-link active">Problem Archive</a>
+                <a href="../presentations.html" class="nav-link">Presentations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="problem-header">
+                    <h1>11-Cycle</h1>
+                    <div class="back-link">
+                        <a href="../problems.html"><i class="fas fa-arrow-left"></i> Back to Problem Archive</a>
+                    </div>
+                </div>
+                
+                <div class="problem-content">
+                    <p>You are given an array $a$ of $n$ distinct integers.</p>
+                    
+                    <p>For positions $1 \leq i < j < k \leq n$, if $(a_i \oplus a_j) \lor (a_j \oplus a_k) < 32$, you are allowed to shift $(a_i, a_j, a_k)$ to $(a_j, a_k, a_i)$.</p>
+                    
+                    <p>This operation can be done as many times as required without any cost.</p>
+                    
+                    <p>What is the lexicographically smallest array that can be created using this?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -129,6 +129,21 @@ body.play-mode {
     color: var(--primary-color);
 }
 
+.work-mode-link {
+    color: var(--accent-color) !important;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.work-mode-link:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color) !important;
+}
+
 /* Navigation */
 .navigation {
     background: var(--card-bg);
@@ -710,4 +725,496 @@ body.play-mode {
 /* Smooth transitions */
 * {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Problem Pages Styling */
+.problem-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.problem-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.back-link {
+    margin-top: 1rem;
+}
+
+.back-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: var(--primary-color);
+}
+
+.problem-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.problem-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.problem-content p:last-child {
+    margin-bottom: 0;
+}
+
+.problem-image {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.problem-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* MathJax styling */
+.MathJax {
+    font-size: 1.1em !important;
+}
+
+/* Ensure proper spacing around math */
+.problem-content .MathJax_Display {
+    margin: 1.5rem 0 !important;
+}
+
+.problem-content .MathJax_Display + p {
+    margin-top: 1.5rem;
+}
+
+/* Responsive design for problem pages */
+@media (max-width: 768px) {
+    .problem-header h1 {
+        font-size: 2rem;
+    }
+    
+    .problem-content {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .problem-image img {
+        max-width: 90%;
+    }
+}
+
+/* Play Mode Home Styling */
+.play-home-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.play-home-content h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+
+.play-navigation-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.play-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.play-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.play-card-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.play-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.play-card p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Art Gallery Styling */
+.art-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.art-header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.art-header p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.art-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.art-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.art-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.art-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.art-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.art-item:hover .art-image img {
+    transform: scale(1.02);
+}
+
+.art-description {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.art-description h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* Writeups Styling */
+.writeups-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.writeups-header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.writeups-header p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.writeups-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.writeups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.writeup-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.writeup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.writeup-card-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.writeup-card-header h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.writeup-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.writeup-date {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    background: var(--bg-color);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.writeup-card-content {
+    padding: 1.5rem;
+}
+
+.writeup-card-content p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
+}
+
+.writeup-preview {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.writeup-card-footer {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-color);
+}
+
+.writeup-read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.writeup-read-more:hover {
+    color: var(--accent-color);
+    transform: translateX(3px);
+}
+
+.writeup-read-more i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.writeup-read-more:hover i {
+    transform: translateX(3px);
+}
+
+.writeup-placeholder {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.writeup-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.writeup-placeholder h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.writeup-placeholder p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* Responsive design for Play mode */
+@media (max-width: 768px) {
+    .play-home-content h2 {
+        font-size: 2rem;
+    }
+    
+    .play-navigation-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .art-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .art-gallery {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .writeups-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .writeups-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .writeup-card-header {
+        padding: 1rem 1rem 0.75rem 1rem;
+    }
+    
+    .writeup-card-content {
+        padding: 1rem;
+    }
+    
+    .writeup-card-footer {
+        padding: 0 1rem 1rem 1rem;
+    }
+}
+
+/* Writeup Viewer Page */
+.back-navigation {
+    margin-bottom: 2rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--accent-color);
+}
+
+.back-link i {
+    font-size: 0.9rem;
+}
+
+.writeup-page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.writeup-page-header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.writeup-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.writeup-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.writeup-content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.writeup-content p:last-child {
+    margin-bottom: 0;
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-color);
+}
+
+.loading-spinner i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.loading-spinner p {
+    font-size: 1.1rem;
+    opacity: 0.8;
 } 

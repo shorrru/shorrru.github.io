@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Rotation - Problem Archive</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- MathJax Configuration -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body class="work-mode">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Akhoury Shauryam</h1>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Satan-Claws" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/akhoury-shauryam-a87195221/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-content">
+            <div class="nav-menu active">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../experience.html" class="nav-link">Experience</a>
+                <a href="../research.html" class="nav-link">Research</a>
+                <a href="../problems.html" class="nav-link active">Problem Archive</a>
+                <a href="../presentations.html" class="nav-link">Presentations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="problem-header">
+                    <h1>Triangle Rotation</h1>
+                    <div class="back-link">
+                        <a href="../problems.html"><i class="fas fa-arrow-left"></i> Back to Problem Archive</a>
+                    </div>
+                </div>
+                
+                <div class="problem-content">
+                    <p>$\Delta_1$ is an equilateral triangle with unit length and we have a function $ f(x) $ which is used to create other triangles.</p>
+                    
+                    <p>We create further triangles with the following rules:</p>
+                    
+                    <p>We take $ \Delta_n $'s side and produce its sides clockwise till its new length is $ f(n) $ times the original length, and the final endpoints are joined to make $ \Delta_{n+1} $.</p>
+                    
+                    <p>For example, if $ f(x) = 2 $:</p>
+                    
+                    <div class="problem-image">
+                        <img src="../assets/images/rotate.png" alt="Triangle rotation diagram">
+                    </div>
+                    
+                    <p>Here, if the Blue triangle is $ \Delta_n $, then the Red triangle is $ \Delta_{n+1} $, and the ratio of lengths $\frac{\text{Blue} + \text{Orange}}{\text{Blue}} = f(n)$, and the triangle rotates by $0.3334$ radians.</p>
+                    
+                    <p>If $f(n) = \frac{2\sqrt{3}n^2-1}{2\sqrt{3}n^2-3}$, find the total rotation of $ \Delta_n $ in radians when compared to $ \Delta_1 $ as $ n \to \infty $.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
